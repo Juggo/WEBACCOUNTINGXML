@@ -21,13 +21,13 @@ declare function app:test($node as node(), $model as map(*)) {
 
 declare function app:deleteFile($node as node(), $model as map(*), $path as xs:string?,$filename as xs
 :string?) {
-    if ($filename and $path and file:exists(concat($path,$filename))) then xmldb:remove($path, $filename)
+    if ($filename and $path) then xmldb:remove($path, $filename)
     else ()
 };
 
 declare function app:createFile($node as node(), $model as map(*), $path as xs:string?, $filename as xs
 :string?, $contents as xs:string?) {
-    if($path and file:is-directory($path) and $filename and $contents) then xmldb:store($path,$filename,$contents)
+    if($path and $filename and $contents) then xmldb:store($path,$filename,$contents)
     else ()
 };
 
