@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div class="templates:surround?with=templates/page.html&amp;at=content">
+    <form action="">
+        <label for="path">Enter file's path:</label>
+        <input name="path" value="/db/apps/webaccountingxml/data"/>
+        <br/>
+        <label for="choice">Append to the file</label>
+        <br/>
+        <input type="radio" name="append" value="Yes" checked="true"> Yes </input>
+        <br/>
+        <input type="radio" name="append" value="No"> No </input>
+        <br/>
+        <label for="serialization">Serialization parameters</label>
+        <input type="text" name="parameters"/>
+        <label for="text">Enter contents of the file:</label>
+        <textarea name="contents"/>
+    </form>
+    <p class="app:updateFile"/>
+</div>

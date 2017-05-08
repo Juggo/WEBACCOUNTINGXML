@@ -1,0 +1,6 @@
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/exist-monex-0.9.7.jar
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/jetty-util-ajax-9.3.9.v20160517.jar
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/websocket-server-9.3.9.v20160517.jar
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/websocket-api-9.3.9.v20160517.jar
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/websocket-servlet-9.3.9.v20160517.jar
+/Applications/eXist-db/webapp/WEB-INF/data/expathrepo/monex-0.9.7/content/websocket-common-9.3.9.v20160517.jar
