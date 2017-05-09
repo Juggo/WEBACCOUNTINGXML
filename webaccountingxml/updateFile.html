@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <div class="templates:surround?with=templates/page.html&amp;at=content">
-    <form action="">
+    <form action="./modules/updateFile.xql" method="post">
         <label for="path">Enter file's path:</label>
         <input name="path" value="/db/apps/webaccountingxml/data"/>
         <br/>
         <label for="choice">Append to the file</label>
         <br/>
-        <input type="radio" name="append" value="Yes" checked="true"> Yes </input>
+        <input type="radio" name="append" value="true" checked="true"> Yes </input>
         <br/>
-        <input type="radio" name="append" value="No"> No </input>
+        <input type="radio" name="append" value="false"> No </input>
         <br/>
         <label for="serialization">Serialization parameters</label>
         <input type="text" name="parameters"/>
         <label for="text">Enter contents of the file:</label>
         <textarea name="contents"/>
+        <input type="submit" value="Submit"/>
     </form>
-    <p class="app:updateFile"/>
 </div>

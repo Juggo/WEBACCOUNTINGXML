@@ -32,8 +32,8 @@ declare function app:createFile($node as node(), $model as map(*), $path as xs:s
 };
 
 declare function app:updateFile($node as node(), $model as map(*), $path as xs:string?, $contents as xs:string?, $parameters as item()*, $append as xs:boolean) as xs:boolean? {
-    if ($path and file:is-directory($path) and $contents) then
+    if ($path and $contents) then
         xmldb:login("/db", 'admin', 'projectadmin') and
-        file:serialize(fn:parse-xml($contents), $path, $parameters, $append)
+        file:serialize(fn:parse-xml($contents), $path, $parameters, fn:true())
     else ()
 };
