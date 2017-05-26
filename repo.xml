@@ -7,8 +7,9 @@
     <license>GNU-LGPL</license>
     <copyright>true</copyright>
     <type>application</type>
-    <target/>
+    <target>webaccountingxml</target>
     <prepare>pre-install.xql</prepare>
     <finish/>
-    <permissions user="admin" password="" group="WAX" mode="rw-rw-r--"/>
+    <permissions user="admin" group="WAX" mode="rw-rw-r--"/>
+<deployed>2017-05-07T23:16:26.449+02:00</deployed>
 </meta>
