@@ -4,6 +4,7 @@ let $path := "/db/apps/webaccountingxml/data/payments.xml"
 let $date := request:get-parameter('date','')
 let $amount := request:get-parameter('amount','')
 
+let $login := xmldb:login("/db", 'admin', 'projectadmin')
 let $doc := doc($path)
 return update insert 
     <payment>
