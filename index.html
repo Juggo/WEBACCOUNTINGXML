@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?> 
+<?xml version="1.0" encoding="UTF-8"?>
 <html lang="cs">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -16,7 +16,7 @@
             <form action="./modules/addPayment.xql" method="post">
                 <h3>Zadání platby</h3>
                 <div class="form-group">
-                    <label for="date">Datum platby: </label>
+                    <label for="date">Datum platby [Ve formátu RRRR-MM-DD]:</label>
                     <input type="date" class="form-control" name="date"/>
                 </div>
                 <div class="form-group">
@@ -28,10 +28,18 @@
             
             <br/>
             
+            <form action="./modules/displayBalanceToday.xql" method="post">
+                <h3>Aktuální bilance plateb</h3>
+                <button type="submit" class="btn btn-primary">Zobrazit aktuální bilanci</button>
+            </form>
+            
+               <br/>
+               
+               
             <form action="./modules/displayBalance.xql" method="post">
-                <h3>Bilance plateb</h3>
+                 <h3>Bilance plateb k datu</h3>
                 <div class="form-group">
-                    <label for="balanceDate">Datum bilance: </label>
+                    <label for="balanceDate">Datum bilance [Ve formátu RRRR-MM-DD]: </label>
                     <input type="date" class="form-control" name="balanceDate"/>
                 </div>
                 <button type="submit" class="btn btn-primary">Zobrazit bilanci</button>
@@ -39,9 +47,13 @@
             
             <br/>
             
-            <form>
-                <h3>Uzavření období a zahájení nového roku</h3>
-                <button type="submit" class="btn btn-primary">Zobrazit bilanci a uzavřít období</button>
+            <form action="./modules/displayBalanceAndSetClosingDate.xql" method="post">
+                <h3>Uzavření období</h3>
+                <div class="form-group">
+                    <label for="balanceDate">Datum uzavření [Ve formátu RRRR-MM-DD]: </label>
+                    <input type="date" class="form-control" name="balanceDate"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Uzavřít období a zobrazit celkovou bilanci</button>
             </form>
         </div>
     </body>

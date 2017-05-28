@@ -10,10 +10,9 @@ return
             fn:sum(
                     let $closingDateString := doc("/db/apps/webaccountingxml/data/closingdate.xml")/closingdates/closingdate/text()
                     let $closingDate := xs:date($closingDateString)
-                    let $balanceDate := xs:date(request:get-parameter('balanceDate',''))
                 
                 for $payment in doc("/db/apps/webaccountingxml/data/payments.xml")/payments/payment
-                where xs:date($payment/date) > $closingDate and xs:date($payment/date) < $balanceDate
+                where xs:date($payment/date) > $closingDate and xs:date($payment/date) < fn:current-date
                 return xs:integer($payment/amount)
             )
     }</p> into doc("/db/apps/webaccountingxml/templates/balance.html")/html/body/div/div,
