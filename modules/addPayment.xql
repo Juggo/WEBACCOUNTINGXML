@@ -6,7 +6,7 @@ let $amount := request:get-parameter('amount','')
 let $login := xmldb:login("/db", 'admin', '')
 
 return
-    if(fn:matches($date,"^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$")) then
+    if(fn:matches($date,"^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$") and fn:matches($amount,"\d{1,10}")) then
         (update insert
             <payment>
                 <date>{$date}</date>
