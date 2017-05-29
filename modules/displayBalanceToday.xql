@@ -12,7 +12,7 @@ return
                     let $closingDate := xs:date($closingDateString)
                 
                 for $payment in doc("/db/apps/webaccountingxml/data/payments.xml")/payments/payment
-                where xs:date($payment/date) > $closingDate and xs:date($payment/date) < fn:current-date
+                where xs:date($payment/date) > $closingDate and xs:date($payment/date) < fn:current-date()
                 return xs:integer($payment/amount)
             )
     }</p> into doc("/db/apps/webaccountingxml/templates/balance.html")/html/body/div/div,

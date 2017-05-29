@@ -3,7 +3,8 @@ xquery version "3.1";
 let $login := xmldb:login("/db", 'admin', '')
                     
 return 
-    update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="value"], 
+    update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="value"],
+    update delete doc("/db/apps/webaccountingxml/index.html")//p[@class="closingDate"], 
     
     update insert <p class="value">Aktuální hodnota:
         { 
@@ -19,6 +20,7 @@ return
     }</p> into doc("/db/apps/webaccountingxml/templates/balance.html")/html/body/div/div,
     update delete doc("/db/apps/webaccountingxml/data/closingdate.xml")/closingdates/closingdate,
     update insert <closingdate>{request:get-parameter('balanceDate','')}</closingdate> into doc("/db/apps/webaccountingxml/data/closingdate.xml")/closingdates,
+    update insert <p class="closingDate">{request:get-parameter('balanceDate','')}</p> into doc("/db/apps/webaccountingxml/index.html")//div[@class="closingDate"],
     response:redirect-to(xs:anyURI("http://localhost:8080/exist/apps/webaccountingxml/templates/balance.html"))
     
     
