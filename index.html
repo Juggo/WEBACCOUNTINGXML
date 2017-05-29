@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
 <html lang="cs">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -13,6 +13,10 @@
             <h2>Webová aplikace pro evidenci příjmů a výdajů</h2>
             <p>Dokumentaci a návrh aplikace naleznete na <a href="https://github.com/Juggo/WEBACCOUNTINGXML/wiki">Wiki stránkách</a> projektu.</p>
             <br/>
+            
+            <div class="notification">
+            </div>
+            
             <form action="./modules/addPayment.xql" method="post">
                 <h3>Zadání platby</h3>
                 <div class="form-group">
@@ -33,8 +37,7 @@
                 <button type="submit" class="btn btn-primary">Zobrazit aktuální bilanci</button>
             </form>
             
-               <br/>
-               
+            <br/>
                
             <form action="./modules/displayBalance.xql" method="post">
                  <h3>Bilance plateb k datu</h3>
@@ -55,6 +58,8 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Uzavřít období a zobrazit celkovou bilanci</button>
             </form>
+            
+            <br/>
         </div>
     </body>
 </html>
