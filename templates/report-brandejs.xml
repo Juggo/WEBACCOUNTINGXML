@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="report-transformation.xsl"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<article>
+    <info>
+        <title>Závěrečná zpráva</title>
+        <author>
+            <personname>
+                <firstname>David</firstname>
+                <surname>Brandejs</surname>
+            </personname>
+        </author>
+        <pubdate>2017-05-30</pubdate>
+    </info>
+    
+    <section>
+        <title>Popis práce</title>
+        <para>
+            Cílem tohoto projektu bylo vytvořit fungující webovou aplikaci pro evidenci příjmů a výdajů. 
+            V rámci této aplikace jsem se ujal vedení týmu a staral se primárně o řízení vývojářů (koordinace, 
+            rozdělování práce a kontrola úkolů) a realizaci úkolů spojených s tvorbou a úpravou repozitáře 
+            za účelem tvorby provozuschopné aplikace. Mimo to jsem se podílel na vývoji samotné aplikace, 
+            kde jsem se staral zejména o návrh struktury aplikace, úpravu designu, implementaci hlavních i 
+            pomocných operací a dokumentaci zdrojového kódu.
+        </para>
+        <para>
+            Na začátku projektu došlo k problémům v komunikaci a spolupráci od dvou členů týmu. 
+            Po dalších výzvách ke spolupráci se jeden z těchto dvou členů začal aktivně zapojovat. 
+            Druhý člen týmu (Ján Budinský) přestal úplně komunikovat, a tudíž byl vyřazen mnou z týmu.
+            Na vývoji aplikace jsme tedy pracovali ve třech lidech namísto čtyřech.
+        </para>
+        <para>
+            Pro implementaci struktury aplikace jsem navrhl framework eXistdb, který funguje jako nativní 
+            XML databáze, ale zároveň poskytuje platformu pro vývoj webových aplikací na základě XML a dalších 
+            technologií jako XQuery, XForms, XSLT, XHTML atd. Dále jsem navrhl a implementoval framework 
+            Bootstrap 3.3.7 za účelem vytvoření přívětivějšího a modernějšího designu uživatelského rozhraní. 
+            Implementoval jsem operaci platební bilance, na kterou později navazovali mí kolegové z důvodu 
+			využití v dalších funkcích, sečítající částky všech plateb uložených v XML. Věnoval jsem se také 
+			implementaci některých inkrementálních změn, které jsou zmíněny v shrnutí náplni práce, a staral jsem se 
+			o okomentování celého zdrojového kódu aplikace s využitím konvence xqDoc. Kromě toho jsem navrhl a 
+			implementoval strukturu závěrečných zpráv ve formátu DocBook a také XSLT soubor k převodu XML obsahu zpráv na HTML.
+        </para>
+    </section>
+    
+    <section>
+        <title>Shrnutí náplně práce</title>
+        <itemizedlist>
+            <listitem>
+                <para>Koordinace vývojářů, rozdělování práce a kontrola úkolů</para>
+            </listitem>
+            <listitem>
+                <para>Tvorba GH repozitáře a prvotní verze Wiki stránek</para>
+            </listitem>
+            <listitem>
+                <para>Návrh struktury aplikace</para>
+            </listitem>
+            <listitem>
+                <para>Návrh a implemetnace vizuální podoby uživatelského rozhraní</para>
+            </listitem>
+            <listitem>
+                <para>Implementace zobrazení platební bilance</para>
+            </listitem>
+            <listitem>
+                <para>Implementace upozornění (notifikací) pro uživatele</para>
+            </listitem>
+            <listitem>
+                <para>Realizace inkrementálních změn (validace určitých inputů; úprava struktury, metadat)</para>
+            </listitem>
+            <listitem>
+                <para>Okomentování zdrojového kódu aplikace</para>
+            </listitem>
+			<listitem>
+                <para>Návrh a implementace podoby závěrečných DocBook zpráv a jejich XSL transformace do HTML</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+</article>
