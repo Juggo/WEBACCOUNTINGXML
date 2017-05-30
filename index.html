@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html lang="cs">
     <head>
+        <meta name="description" content="Webová aplikace pro evidenci příjmů a výdajů"/>
+	    <meta name="keywords" content="evidence, příjmy, výdaje, bilance, platby"/>
+	    <meta name="author" content="Juggo, hrasnam, Kroomy"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>WEBACCOUNTINGXML</title>
         
@@ -12,14 +15,17 @@
             <h1>WEBACCOUNTINGXML</h1>
             <h2>Webová aplikace pro evidenci příjmů a výdajů</h2>
             
+<!--        Place for notifications concerning successful payment addition/unsuccessful entering of parameters -->
             <div class="notification">
             </div>
             
+<!--        Current closing date from which the balance is counted till today or specific date -->
             <h3>Aktuální datum uzavření: </h3>
             <div class="closingDate">
-                <p class="closingDate">2017-01-01</p>
+				<p class="closingDate">2017-01-01</p>
             </div>
             
+<!--        Operation add payment -->
             <form action="./modules/addPayment.xql" method="post">
                 <h3>Zadání platby</h3>
                 <div class="form-group">
@@ -35,6 +41,7 @@
             
             <br/>
             
+<!--        Operation display balance of all payments from closing date till today -->
             <form action="./modules/displayBalanceToday.xql" method="post">
                 <h3>Aktuální bilance plateb</h3>
                 <button type="submit" class="btn btn-primary">Zobrazit aktuální bilanci</button>
@@ -42,6 +49,7 @@
             
             <br/>
                
+<!--        Operation display balance of all payments from closing date till specific date -->
             <form action="./modules/displayBalance.xql" method="post">
                  <h3>Bilance plateb k datu</h3>
                 <div class="form-group">
@@ -53,6 +61,7 @@
             
             <br/>
             
+<!--        Operation end accounting year and begin a new one -->
             <form action="./modules/displayBalanceAndSetClosingDate.xql" method="post">
                 <h3>Uzavření období</h3>
                 <div class="form-group">
