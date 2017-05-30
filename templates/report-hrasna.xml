@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="report-transformation.xsl"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "../docbook-xml-4.5/docbookx.dtd">
+<article>
+    <info>
+        <title>Záverečná správa</title>
+        <author>
+            <personname>
+                <firstname>Marek</firstname>
+                <surname>Hrašna</surname>
+            </personname>
+        </author>
+        <pubdate>2017-05-30</pubdate>
+    </info>
+    
+    <section>
+        <title>Popis práce</title>
+        <para>
+            Cielom tohto projektu bolo vytvorit fungujúcu webovuú aplikáciu pre evidenciu příjmov a výdajov. 
+            
+            Mojou úlohou bolo zrealizovať vytvorenie základnej štruktúry, implementácia funkcií k vytvoreniu a vymazaniu súborov, zaevidovniu platby a vytvoriť diagram aplikačnej logiky.
+        </para>
+        <para>
+            Prvou úlohou bolo naštudovať si ako vytvoriť aplikáciu v exist-db. Po vytvorení aplikácie som začal implementovať funkcie na vytvorenie a vymazanie súboru. Prvotne som sa snažil vytvoriť aj modul na aktualizáciu súboru - tu som mal mnoho problémov s dokumentáciou, keďže každý databázový systém má podobné funkcie riešené proprietárne. Strávil som tým mnoho času, avšak neskôr sme si s týmom uvedomili že stačí implementovať modul na pridanie platby.
+        </para>
+        <para>
+            Po implementácii iných častí aplikácie kolegami som vytvoril diagram aplikačnej logiky pomocou online nástroju creately. Keďže som nemal predchádzajúce skúsenosti s tvorením UML diagramom, pomáhal mi pri tvorení David Brandejs.
+        </para>
+    </section>
+    
+    <section>
+        <title>Zhrnutie náplne práce</title>
+            <itemizedlist>
+                <listitem>
+                    <para>Vytvorenie základnej štruktúry</para>
+                </listitem>
+                <listitem>
+                    <para>Implementácia modulov pre vytvorenie a mazanie súborov</para>
+                </listitem>
+                <listitem>
+                    <para>Implementácia databázy platieb</para>
+                </listitem>
+                <listitem>
+                    <para>Implementácia vkladanie platieb do databázy</para>
+                </listitem>
+                <listitem>
+                    <para>Vytvorenie diagramu aplikačnej logiky</para>
+                </listitem>
+            </itemizedlist>
+      </section>
+</article>
