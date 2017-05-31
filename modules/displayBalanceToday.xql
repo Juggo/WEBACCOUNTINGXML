@@ -1,9 +1,20 @@
 xquery version "3.1";
 
+(:~ 
+ : This module serves for displaying balance of payments from closing date till today.
+ : 
+ : Current balance will be refreshed on balance.html summing amounts of payments 
+ : with dates between the closing date and the current date.
+ : 
+ : @author Juggo
+ : @author Kroomy
+ : @version 1.0 
+ :)
 
 let $login := xmldb:login("/db", 'admin', '')
 
 return 
+    (: rewritting balance of payments :)
     update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="balanceType"], 
     update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="totalIncome"],
     update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="totalExpenses"],
@@ -42,4 +53,4 @@ return
                 return xs:integer($payment/amount)
             )
     }</p>  into doc("/db/apps/webaccountingxml/templates/balance.html")/html/body/div/div,
-    response:redirect-to(xs:anyURI("http://localhost:8080/exist/apps/webaccountingxml/templates/balance.html"))
+response:redirect-to(xs:anyURI("http://localhost:8080/exist/apps/webaccountingxml/templates/balance.html"))
