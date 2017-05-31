@@ -20,6 +20,7 @@ return
     (: input validation :)
     if(fn:matches($dateString,"^(19|20)\d\d-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$")) then
         (: rewritting balance of payments :)
+        (
         update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="balanceType"], 
     update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="totalIncome"],
     update delete doc("/db/apps/webaccountingxml/templates/balance.html")//p[@class="totalExpenses"],
