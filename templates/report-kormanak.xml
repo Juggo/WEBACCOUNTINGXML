@@ -15,13 +15,13 @@
     <section>
         <title>Popis práce</title>
         <para>
-        text
+        Tento projekt si kladl za cíl vyzkoušet si v praxi technologie a postupy vyučované v rámci předmětu PB138. Mým prvním úkolem na projektu bylo zpracování zadání do formy konkrétních případů užití, návrh vzhledu aplikace a aplikační logiky jednotlivých operací. Výstupy jsem zpracoval na projektovou Wiki, kterou jsem následně udržoval po čas celého projektu. Návrh vzhledu aplikace jsem následně implementoval do základního HTML dokumentu, který posloužil jako kostra pro následný vývoj.
         </para>
         <para>
-        text
+        Druhým tématem, které jsem v rámci našeho týmu dostal na starost, byla práce s daty (ve smyslu datum). Pro správnou funkčnost bylo nutné nejprve zajistit konzistentní data, implementoval jsem tedy validaci pomocí regulárních výrazů tak, aby bylo zajištěno, že vstupy od uživatele bude možné korektně parsovat do XQuery datového typu xs:date. Během realizace těchto kroků jsem si vyzkoušel principy XQuery výrazů typu FLWOR.
         </para>
         <para>
-        text
+        Práci s daty jsem následně aplikoval v samotné výpočetní logice. Zavedl jsem evidenci data uzavření a možnost jeho aktualizace pomocí operace uzavření období (včetně kontroly, že se uživatel nesnaží uzavřít období neplatným datem). Následně jsem rozšířil funkci pro výpočet celkové bilance tak, aby správně filtrovala podle nastavených dat, a přidal operaci pro zobrazení bilance k aktuálnímu datu. Do výstupů bilance jsem dle zadání přidal také dílčí výpočet celkových příjmů a výdajů.
         </para>
     </section>
     
