@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="report-transformation.xsl"?>
+<article>
+    <info>
+        <title>Závěrečná zpráva</title>
+        <author>
+            <personname>
+                <firstname>Tomáš</firstname>
+                <surname>Kormaňák</surname>
+            </personname>
+        </author>
+        <pubdate>2017-05-30</pubdate>
+    </info>
+    
+    <section>
+        <title>Popis práce</title>
+        <para>
+        text
+        </para>
+        <para>
+        text
+        </para>
+        <para>
+        text
+        </para>
+    </section>
+    
+    <section>
+        <title>Shrnutí náplně práce</title>
+        <itemizedlist>
+            <listitem>
+                <para>Zpracování požadavků aplikace do případů užití</para>
+            </listitem>
+            <listitem>
+                <para>Návrh uživatelského rozhraní a vytvoření základního wireframe aplikace</para>
+            </listitem>
+            <listitem>
+                <para>Návrh aplikační logiky</para>
+            </listitem>
+            <listitem>
+                <para>Implementace práce s daty</para>
+            </listitem>
+            <listitem>
+                <para>Implementace validace pomocí regulárních výrazů</para>
+            </listitem>
+            <listitem>
+                <para>Rozšíření počítání bilance dle požadavků (filtrování podle data, dílčí sumy)</para>
+            </listitem>
+            <listitem>
+                <para>Implementace operace uzavření období a evidence data uzavření</para>
+            </listitem>
+            <listitem>
+                <para>Dokumentace aplikace na projektové wiki</para>
+            </listitem>
+        </itemizedlist>
+    </section>
+</article>
